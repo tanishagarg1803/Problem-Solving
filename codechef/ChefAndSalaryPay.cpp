@@ -30,7 +30,5 @@ int main() {
         int ans=c1*x+c3*y;
         cout<<ans<<endl;
     }
-    
-	// your code goes here
 	return 0;
 }

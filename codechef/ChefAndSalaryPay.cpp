@@ -26,7 +26,6 @@ int main() {
             }
         }
          c3=c2>c3?c2:c3;
-        //cout<<c1<<" "<<c2<<endl;
         int ans=c1*x+c3*y;
         cout<<ans<<endl;
     }

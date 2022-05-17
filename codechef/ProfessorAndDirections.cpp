@@ -32,7 +32,5 @@ int main() {
             cout<<"No"<<endl;
         }
     }
-    
-	// your code goes here
-	return 0;
+    return 0;
 }

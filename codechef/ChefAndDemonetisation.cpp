@@ -25,11 +25,7 @@ int main(void) {
                 c=2;
             }
           }
-
-
         printf("%d\n",a+c);
-
     }
-	// your code goes here
 	return 0;
 }

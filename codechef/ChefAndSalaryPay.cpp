@@ -1,4 +1,4 @@
-//Problem link: https://www.codechef.com/START16C/problems/HCAGMAM1
+// Problem link: https://www.codechef.com/START16C/problems/HCAGMAM1
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -20,7 +20,5 @@ int main() {
         }
         cout<<s<<endl;
     }
-    
-	// your code goes here
 	return 0;
 }

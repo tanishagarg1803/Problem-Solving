@@ -1,0 +1,21 @@
+// Problem Link: https://leetcode.com/problems/number-of-arithmetic-triplets/
+
+class Solution {
+public:
+    int arithmeticTriplets(vector<int>& nums, int diff) {
+        int n=nums.size();
+        int c=0;
+        vector<int>::iterator it;
+        for(int i=0;i<n-2;i++){
+            int x=diff+nums[i];
+            it=find(nums.begin(),nums.end(),x);
+            if(it!=nums.end()){
+                int y=x+diff;
+                if(find(nums.begin(),nums.end(),y)!=nums.end()){
+                    c++;
+                }
+            }
+        }
+        return c;
+    }
+};

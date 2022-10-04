@@ -12,7 +12,7 @@ int main() {
         if(a>0 && b>0){
             cout<<"Solution"<<endl;
         }
-      
+
         else if(b==0){
             cout<<"Solid"<<endl;
         }
@@ -23,3 +23,6 @@ int main() {
     }
 	return 0;
 }
+
+
+

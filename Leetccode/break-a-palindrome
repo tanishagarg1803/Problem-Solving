@@ -1,0 +1,30 @@
+// Problem Link: https://leetcode.com/problems/break-a-palindrome/
+
+class Solution 
+// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Break a Palindrome.
+{
+public:
+    string breakPalindrome(string palindrome)
+    {
+        ios_base::sync_with_stdio(0);
+        int l = palindrome.size();
+        // A single letter entry can't be broken in any way so that it doesnt stay a palindrome
+        // Hence return ""
+        if (l == 1)
+            return "";
+        // Now the remaining task to find a position that doesn't contain 'a'
+        for (int i = 0; i <= l/2; i++)
+            if (palindrome[i] != 'a')
+            {
+			    //If the position lies in the center of the string, and the string has an odd-number length
+				// Time to break, becoz changing it into 'a', will create a new palindrome
+                if ((l & 1) && i == l / 2)
+                    break;
+				// Otherwise change the character at index i to 'a', and return it
+                palindrome[i] = 'a';
+                return palindrome;
+            }
+        palindrome[l - 1] = 'b';
+        return palindrome;
+    }
+};

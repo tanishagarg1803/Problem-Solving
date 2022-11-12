@@ -24,9 +24,7 @@ public:
         // make vis set, to find out whether for a particular word, 
         // either we previously encountered or not
         unordered_set<string> vis;
-        
-        int ans = 0; // declare ans variable 
-        
+        int ans = 0; // declare ans variable
         queue<string> q; // define queue to start bfs
         q.push(start); // push starting word into the queue
         vis.insert(start); // insert into vis

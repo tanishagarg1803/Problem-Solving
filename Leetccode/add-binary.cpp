@@ -7,8 +7,6 @@ public:
         
         
         if(b.size() > a.size()) swap(a,b);
-        
-        
         while(b.size() < a.size()) b = "0" + b;
 
         int carry = 0;
